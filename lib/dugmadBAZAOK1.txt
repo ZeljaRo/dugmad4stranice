@@ -1,0 +1,6591 @@
+﻿=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/maindart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'features/page1/page1_screen.dart';
+
+void main() {
+  runApp(const DugmadApp());
+}
+
+class DugmadApp extends StatelessWidget {
+  const DugmadApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ScreenUtilInit(
+      designSize: Size(360, 690),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (context, child) {
+        return const MaterialApp(
+          debugShowCheckedModeBanner: false,
+          home: Page1Screen(),
+        );
+      },
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/page1_screendart ===
+import 'package:flutter/material.dart';
+import 'widgets/page1_grid_layout.dart';
+import 'row2/row2_grid.dart';
+import 'row3/row3_grid.dart';
+import 'row4/row4_grid.dart';
+import 'row5/row5_grid.dart';
+import 'row6/row6_grid.dart';
+import 'row7/row7_grid.dart';
+import 'row8/row8_grid.dart';
+import 'row9/row9_grid.dart';
+
+class Page1Screen extends StatelessWidget {
+  const Page1Screen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const Page1GridLayout(), // HEADER - fiksno na vrhu
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: const [
+                  Row2Grid(),
+                  Row3Grid(),
+                  Row4Grid(),
+                  Row5Grid(),
+                  Row6Grid(),
+                  Row7Grid(),
+                  Row8Grid(),
+                ],
+              ),
+            ),
+            const Row9Grid(), // FOOTER - fiksno dolje
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row2/row2_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row2Grid extends StatelessWidget {
+  const Row2Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme21Widget(),
+            Dugme22Widget(),
+            Dugme23Widget(),
+            Dugme24Widget(),
+            Dugme25Widget(),
+            Dugme26Widget(),
+            Dugme27Widget(),
+            Dugme28Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row2/widgets/dugme_2_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme21Widget extends StatelessWidget {
+  const Dugme21Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 9
+        },
+        child: Text('9'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row2/widgets/dugme_2_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme22Widget extends StatelessWidget {
+  const Dugme22Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 10
+        },
+        child: Text('10'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row2/widgets/dugme_2_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme23Widget extends StatelessWidget {
+  const Dugme23Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 11
+        },
+        child: Text('11'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row2/widgets/dugme_2_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme24Widget extends StatelessWidget {
+  const Dugme24Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 12
+        },
+        child: Text('12'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row2/widgets/dugme_2_5_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme25Widget extends StatelessWidget {
+  const Dugme25Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 13
+        },
+        child: Text('13'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row2/widgets/dugme_2_6_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme26Widget extends StatelessWidget {
+  const Dugme26Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 14
+        },
+        child: Text('14'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row2/widgets/dugme_2_7_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme27Widget extends StatelessWidget {
+  const Dugme27Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 15
+        },
+        child: Text('15'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row2/widgets/dugme_2_8_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme28Widget extends StatelessWidget {
+  const Dugme28Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 16
+        },
+        child: Text('16'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row2/widgets/widgetsdart ===
+export 'dugme_2_1_widget.dart';
+export 'dugme_2_2_widget.dart';
+export 'dugme_2_3_widget.dart';
+export 'dugme_2_4_widget.dart';
+export 'dugme_2_5_widget.dart';
+export 'dugme_2_6_widget.dart';
+export 'dugme_2_7_widget.dart';
+export 'dugme_2_8_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row3/row3_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row3Grid extends StatelessWidget {
+  const Row3Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme31Widget(),
+            Dugme32Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme33Widget(),
+            Dugme34Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row3/widgets/dugme_3_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme31Widget extends StatelessWidget {
+  const Dugme31Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 17
+        },
+        child: Text('17'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row3/widgets/dugme_3_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme32Widget extends StatelessWidget {
+  const Dugme32Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 18
+        },
+        child: Text('18'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row3/widgets/dugme_3_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme33Widget extends StatelessWidget {
+  const Dugme33Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 19
+        },
+        child: Text('19'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row3/widgets/dugme_3_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme34Widget extends StatelessWidget {
+  const Dugme34Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 20
+        },
+        child: Text('20'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row3/widgets/widgetsdart ===
+export 'dugme_3_1_widget.dart';
+export 'dugme_3_2_widget.dart';
+export 'dugme_3_3_widget.dart';
+export 'dugme_3_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row4/row4_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row4Grid extends StatelessWidget {
+  const Row4Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme41Widget(),
+            Dugme42Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme43Widget(),
+            Dugme44Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row4/widgets/dugme_4_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme41Widget extends StatelessWidget {
+  const Dugme41Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 21
+        },
+        child: Text('21'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row4/widgets/dugme_4_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme42Widget extends StatelessWidget {
+  const Dugme42Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 22
+        },
+        child: Text('22'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row4/widgets/dugme_4_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme43Widget extends StatelessWidget {
+  const Dugme43Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 23
+        },
+        child: Text('23'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row4/widgets/dugme_4_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme44Widget extends StatelessWidget {
+  const Dugme44Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 24
+        },
+        child: Text('24'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row4/widgets/widgetsdart ===
+export 'dugme_4_1_widget.dart';
+export 'dugme_4_2_widget.dart';
+export 'dugme_4_3_widget.dart';
+export 'dugme_4_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row5/row5_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row5Grid extends StatelessWidget {
+  const Row5Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme51Widget(),
+            Dugme52Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme53Widget(),
+            Dugme54Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row5/widgets/dugme_5_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme51Widget extends StatelessWidget {
+  const Dugme51Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 25
+        },
+        child: Text('25'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row5/widgets/dugme_5_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme52Widget extends StatelessWidget {
+  const Dugme52Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 26
+        },
+        child: Text('26'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row5/widgets/dugme_5_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme53Widget extends StatelessWidget {
+  const Dugme53Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 27
+        },
+        child: Text('27'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row5/widgets/dugme_5_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme54Widget extends StatelessWidget {
+  const Dugme54Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 28
+        },
+        child: Text('28'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row5/widgets/widgetsdart ===
+export 'dugme_5_1_widget.dart';
+export 'dugme_5_2_widget.dart';
+export 'dugme_5_3_widget.dart';
+export 'dugme_5_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row6/row6_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row6Grid extends StatelessWidget {
+  const Row6Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme61Widget(),
+            Dugme62Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme63Widget(),
+            Dugme64Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row6/widgets/dugme_6_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme61Widget extends StatelessWidget {
+  const Dugme61Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 29
+        },
+        child: Text('29'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row6/widgets/dugme_6_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme62Widget extends StatelessWidget {
+  const Dugme62Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 30
+        },
+        child: Text('30'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row6/widgets/dugme_6_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme63Widget extends StatelessWidget {
+  const Dugme63Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 31
+        },
+        child: Text('31'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row6/widgets/dugme_6_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme64Widget extends StatelessWidget {
+  const Dugme64Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 32
+        },
+        child: Text('32'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row6/widgets/widgetsdart ===
+export 'dugme_6_1_widget.dart';
+export 'dugme_6_2_widget.dart';
+export 'dugme_6_3_widget.dart';
+export 'dugme_6_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row7/row7_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row7Grid extends StatelessWidget {
+  const Row7Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme71Widget(),
+            Dugme72Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme73Widget(),
+            Dugme74Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row7/widgets/dugme_7_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme71Widget extends StatelessWidget {
+  const Dugme71Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 33
+        },
+        child: Text('33'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row7/widgets/dugme_7_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme72Widget extends StatelessWidget {
+  const Dugme72Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 34
+        },
+        child: Text('34'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row7/widgets/dugme_7_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme73Widget extends StatelessWidget {
+  const Dugme73Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 35
+        },
+        child: Text('35'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row7/widgets/dugme_7_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme74Widget extends StatelessWidget {
+  const Dugme74Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 36
+        },
+        child: Text('36'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row7/widgets/widgetsdart ===
+export 'dugme_7_1_widget.dart';
+export 'dugme_7_2_widget.dart';
+export 'dugme_7_3_widget.dart';
+export 'dugme_7_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row8/row8_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row8Grid extends StatelessWidget {
+  const Row8Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme81Widget(),
+            Dugme82Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme83Widget(),
+            Dugme84Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row8/widgets/dugme_8_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme81Widget extends StatelessWidget {
+  const Dugme81Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 37
+        },
+        child: Text('37'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row8/widgets/dugme_8_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme82Widget extends StatelessWidget {
+  const Dugme82Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 38
+        },
+        child: Text('38'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row8/widgets/dugme_8_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme83Widget extends StatelessWidget {
+  const Dugme83Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 39
+        },
+        child: Text('39'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row8/widgets/dugme_8_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme84Widget extends StatelessWidget {
+  const Dugme84Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 40
+        },
+        child: Text('40'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row8/widgets/widgetsdart ===
+export 'dugme_8_1_widget.dart';
+export 'dugme_8_2_widget.dart';
+export 'dugme_8_3_widget.dart';
+export 'dugme_8_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row9/row9_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../page2/page2_screen.dart';
+import 'widgets/widgets.dart';
+
+class Row9Grid extends StatelessWidget {
+  const Row9Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(left: 8.w, right: 8.w, top: 8.h, bottom: 16.h),
+      child: Column(
+        children: [
+          Table(
+            defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+            children: [
+              TableRow(children: [
+                Dugme91Widget(),
+                Dugme92Widget(),
+                Dugme93Widget(),
+                Dugme94Widget(),
+                Dugme95Widget(),
+                Dugme96Widget(),
+                Dugme97Widget(),
+                Dugme98Widget(),
+              ]),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              IconButton(
+                icon: const Icon(Icons.arrow_forward),
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Page2Screen()),
+                  );
+                },
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row9/widgets/dugme_9_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme91Widget extends StatelessWidget {
+  const Dugme91Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 41
+        },
+        child: Text('41'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row9/widgets/dugme_9_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme92Widget extends StatelessWidget {
+  const Dugme92Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 42
+        },
+        child: Text('42'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row9/widgets/dugme_9_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme93Widget extends StatelessWidget {
+  const Dugme93Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 43
+        },
+        child: Text('43'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row9/widgets/dugme_9_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme94Widget extends StatelessWidget {
+  const Dugme94Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 44
+        },
+        child: Text('44'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row9/widgets/dugme_9_5_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme95Widget extends StatelessWidget {
+  const Dugme95Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 45
+        },
+        child: Text('45'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row9/widgets/dugme_9_6_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme96Widget extends StatelessWidget {
+  const Dugme96Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 46
+        },
+        child: Text('46'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row9/widgets/dugme_9_7_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme97Widget extends StatelessWidget {
+  const Dugme97Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 47
+        },
+        child: Text('47'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row9/widgets/dugme_9_8_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme98Widget extends StatelessWidget {
+  const Dugme98Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 48
+        },
+        child: Text('48'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/row9/widgets/widgetsdart ===
+export 'dugme_9_1_widget.dart';
+export 'dugme_9_2_widget.dart';
+export 'dugme_9_3_widget.dart';
+export 'dugme_9_4_widget.dart';
+export 'dugme_9_5_widget.dart';
+export 'dugme_9_6_widget.dart';
+export 'dugme_9_7_widget.dart';
+export 'dugme_9_8_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/widgets/dugme_1_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme11Widget extends StatelessWidget {
+  const Dugme11Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 1
+        },
+        child: Text('1'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/widgets/dugme_1_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme12Widget extends StatelessWidget {
+  const Dugme12Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 2
+        },
+        child: Text('2'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/widgets/dugme_1_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme13Widget extends StatelessWidget {
+  const Dugme13Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 3
+        },
+        child: Text('3'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/widgets/dugme_1_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme14Widget extends StatelessWidget {
+  const Dugme14Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 4
+        },
+        child: Text('4'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/widgets/dugme_1_5_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme15Widget extends StatelessWidget {
+  const Dugme15Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 5
+        },
+        child: Text('5'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/widgets/dugme_1_6_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme16Widget extends StatelessWidget {
+  const Dugme16Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 6
+        },
+        child: Text('6'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/widgets/dugme_1_7_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme17Widget extends StatelessWidget {
+  const Dugme17Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 7
+        },
+        child: Text('7'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/widgets/dugme_1_8_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme18Widget extends StatelessWidget {
+  const Dugme18Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 8
+        },
+        child: Text('8'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/widgets/page1_grid_layoutdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets.dart';
+
+class Page1GridLayout extends StatelessWidget {
+  const Page1GridLayout({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 16.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme11Widget(),
+            Dugme12Widget(),
+            Dugme13Widget(),
+            Dugme14Widget(),
+            Dugme15Widget(),
+            Dugme16Widget(),
+            Dugme17Widget(),
+            Dugme18Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page1/widgets/widgetsdart ===
+export 'dugme_1_1_widget.dart';
+export 'dugme_1_2_widget.dart';
+export 'dugme_1_3_widget.dart';
+export 'dugme_1_4_widget.dart';
+export 'dugme_1_5_widget.dart';
+export 'dugme_1_6_widget.dart';
+export 'dugme_1_7_widget.dart';
+export 'dugme_1_8_widget.dart';
+export 'page1_grid_layout.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/page1_screendart ===
+import 'package:flutter/material.dart';
+import 'widgets/page1_grid_layout.dart';
+import 'row2/row2_grid.dart';
+import 'row3/row3_grid.dart';
+import 'row4/row4_grid.dart';
+import 'row5/row5_grid.dart';
+import 'row6/row6_grid.dart';
+import 'row7/row7_grid.dart';
+import 'row8/row8_grid.dart';
+import 'row9/row9_grid.dart';
+
+class Page1Screen extends StatelessWidget {
+  const Page1Screen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const Page1GridLayout(), // HEADER - fiksno na vrhu
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: const [
+                  Row2Grid(),
+                  Row3Grid(),
+                  Row4Grid(),
+                  Row5Grid(),
+                  Row6Grid(),
+                  Row7Grid(),
+                  Row8Grid(),
+                ],
+              ),
+            ),
+            const Row9Grid(), // FOOTER - fiksno dolje
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/page2_screendart ===
+import 'package:flutter/material.dart';
+import 'widgets/page1_grid_layout.dart';
+import 'row2/row2_grid.dart';
+import 'row3/row3_grid.dart';
+import 'row4/row4_grid.dart';
+import 'row5/row5_grid.dart';
+import 'row6/row6_grid.dart';
+import 'row7/row7_grid.dart';
+import 'row8/row8_grid.dart';
+import 'row9/row9_grid.dart';
+
+class Page2Screen extends StatelessWidget {
+  const Page2Screen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const Page1GridLayout(),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: const [
+                  Row2Grid(),
+                  Row3Grid(),
+                  Row4Grid(),
+                  Row5Grid(),
+                  Row6Grid(),
+                  Row7Grid(),
+                  Row8Grid(),
+                ],
+              ),
+            ),
+            const Row9Grid(),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row2/row2_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row2Grid extends StatelessWidget {
+  const Row2Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme21Widget(),
+            Dugme22Widget(),
+            Dugme23Widget(),
+            Dugme24Widget(),
+            Dugme25Widget(),
+            Dugme26Widget(),
+            Dugme27Widget(),
+            Dugme28Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row2/widgets/dugme_2_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme21Widget extends StatelessWidget {
+  const Dugme21Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 9
+        },
+        child: Text('9'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row2/widgets/dugme_2_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme22Widget extends StatelessWidget {
+  const Dugme22Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 10
+        },
+        child: Text('10'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row2/widgets/dugme_2_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme23Widget extends StatelessWidget {
+  const Dugme23Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 11
+        },
+        child: Text('11'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row2/widgets/dugme_2_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme24Widget extends StatelessWidget {
+  const Dugme24Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 12
+        },
+        child: Text('12'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row2/widgets/dugme_2_5_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme25Widget extends StatelessWidget {
+  const Dugme25Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 13
+        },
+        child: Text('13'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row2/widgets/dugme_2_6_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme26Widget extends StatelessWidget {
+  const Dugme26Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 14
+        },
+        child: Text('14'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row2/widgets/dugme_2_7_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme27Widget extends StatelessWidget {
+  const Dugme27Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 15
+        },
+        child: Text('15'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row2/widgets/dugme_2_8_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme28Widget extends StatelessWidget {
+  const Dugme28Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 16
+        },
+        child: Text('16'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row2/widgets/widgetsdart ===
+export 'dugme_2_1_widget.dart';
+export 'dugme_2_2_widget.dart';
+export 'dugme_2_3_widget.dart';
+export 'dugme_2_4_widget.dart';
+export 'dugme_2_5_widget.dart';
+export 'dugme_2_6_widget.dart';
+export 'dugme_2_7_widget.dart';
+export 'dugme_2_8_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row3/row3_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row3Grid extends StatelessWidget {
+  const Row3Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme31Widget(),
+            Dugme32Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme33Widget(),
+            Dugme34Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row3/widgets/dugme_3_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme31Widget extends StatelessWidget {
+  const Dugme31Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 17
+        },
+        child: Text('17'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row3/widgets/dugme_3_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme32Widget extends StatelessWidget {
+  const Dugme32Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 18
+        },
+        child: Text('18'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row3/widgets/dugme_3_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme33Widget extends StatelessWidget {
+  const Dugme33Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 19
+        },
+        child: Text('19'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row3/widgets/dugme_3_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme34Widget extends StatelessWidget {
+  const Dugme34Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 20
+        },
+        child: Text('20'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row3/widgets/widgetsdart ===
+export 'dugme_3_1_widget.dart';
+export 'dugme_3_2_widget.dart';
+export 'dugme_3_3_widget.dart';
+export 'dugme_3_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row4/row4_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row4Grid extends StatelessWidget {
+  const Row4Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme41Widget(),
+            Dugme42Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme43Widget(),
+            Dugme44Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row4/widgets/dugme_4_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme41Widget extends StatelessWidget {
+  const Dugme41Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 21
+        },
+        child: Text('21'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row4/widgets/dugme_4_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme42Widget extends StatelessWidget {
+  const Dugme42Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 22
+        },
+        child: Text('22'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row4/widgets/dugme_4_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme43Widget extends StatelessWidget {
+  const Dugme43Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 23
+        },
+        child: Text('23'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row4/widgets/dugme_4_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme44Widget extends StatelessWidget {
+  const Dugme44Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 24
+        },
+        child: Text('24'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row4/widgets/widgetsdart ===
+export 'dugme_4_1_widget.dart';
+export 'dugme_4_2_widget.dart';
+export 'dugme_4_3_widget.dart';
+export 'dugme_4_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row5/row5_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row5Grid extends StatelessWidget {
+  const Row5Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme51Widget(),
+            Dugme52Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme53Widget(),
+            Dugme54Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row5/widgets/dugme_5_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme51Widget extends StatelessWidget {
+  const Dugme51Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 25
+        },
+        child: Text('25'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row5/widgets/dugme_5_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme52Widget extends StatelessWidget {
+  const Dugme52Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 26
+        },
+        child: Text('26'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row5/widgets/dugme_5_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme53Widget extends StatelessWidget {
+  const Dugme53Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 27
+        },
+        child: Text('27'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row5/widgets/dugme_5_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme54Widget extends StatelessWidget {
+  const Dugme54Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 28
+        },
+        child: Text('28'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row5/widgets/widgetsdart ===
+export 'dugme_5_1_widget.dart';
+export 'dugme_5_2_widget.dart';
+export 'dugme_5_3_widget.dart';
+export 'dugme_5_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row6/row6_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row6Grid extends StatelessWidget {
+  const Row6Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme61Widget(),
+            Dugme62Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme63Widget(),
+            Dugme64Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row6/widgets/dugme_6_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme61Widget extends StatelessWidget {
+  const Dugme61Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 29
+        },
+        child: Text('29'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row6/widgets/dugme_6_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme62Widget extends StatelessWidget {
+  const Dugme62Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 30
+        },
+        child: Text('30'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row6/widgets/dugme_6_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme63Widget extends StatelessWidget {
+  const Dugme63Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 31
+        },
+        child: Text('31'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row6/widgets/dugme_6_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme64Widget extends StatelessWidget {
+  const Dugme64Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 32
+        },
+        child: Text('32'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row6/widgets/widgetsdart ===
+export 'dugme_6_1_widget.dart';
+export 'dugme_6_2_widget.dart';
+export 'dugme_6_3_widget.dart';
+export 'dugme_6_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row7/row7_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row7Grid extends StatelessWidget {
+  const Row7Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme71Widget(),
+            Dugme72Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme73Widget(),
+            Dugme74Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row7/widgets/dugme_7_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme71Widget extends StatelessWidget {
+  const Dugme71Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 33
+        },
+        child: Text('33'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row7/widgets/dugme_7_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme72Widget extends StatelessWidget {
+  const Dugme72Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 34
+        },
+        child: Text('34'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row7/widgets/dugme_7_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme73Widget extends StatelessWidget {
+  const Dugme73Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 35
+        },
+        child: Text('35'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row7/widgets/dugme_7_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme74Widget extends StatelessWidget {
+  const Dugme74Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 36
+        },
+        child: Text('36'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row7/widgets/widgetsdart ===
+export 'dugme_7_1_widget.dart';
+export 'dugme_7_2_widget.dart';
+export 'dugme_7_3_widget.dart';
+export 'dugme_7_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row8/row8_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row8Grid extends StatelessWidget {
+  const Row8Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme81Widget(),
+            Dugme82Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme83Widget(),
+            Dugme84Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row8/widgets/dugme_8_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme81Widget extends StatelessWidget {
+  const Dugme81Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 37
+        },
+        child: Text('37'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row8/widgets/dugme_8_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme82Widget extends StatelessWidget {
+  const Dugme82Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 38
+        },
+        child: Text('38'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row8/widgets/dugme_8_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme83Widget extends StatelessWidget {
+  const Dugme83Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 39
+        },
+        child: Text('39'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row8/widgets/dugme_8_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme84Widget extends StatelessWidget {
+  const Dugme84Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 40
+        },
+        child: Text('40'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row8/widgets/widgetsdart ===
+export 'dugme_8_1_widget.dart';
+export 'dugme_8_2_widget.dart';
+export 'dugme_8_3_widget.dart';
+export 'dugme_8_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row9/row9_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../page1/page1_screen.dart';
+import '../../page3/page3_screen.dart';
+import 'widgets/widgets.dart';
+
+class Row9Grid extends StatelessWidget {
+  const Row9Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(left: 8.w, right: 8.w, top: 8.h, bottom: 16.h),
+      child: Column(
+        children: [
+          Table(
+            defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+            children: [
+              TableRow(children: [
+                Dugme91Widget(),
+                Dugme92Widget(),
+                Dugme93Widget(),
+                Dugme94Widget(),
+                Dugme95Widget(),
+                Dugme96Widget(),
+                Dugme97Widget(),
+                Dugme98Widget(),
+              ]),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              IconButton(
+                icon: const Icon(Icons.arrow_back),
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Page1Screen()),
+                  );
+                },
+              ),
+              IconButton(
+                icon: const Icon(Icons.arrow_forward),
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Page3Screen()),
+                  );
+                },
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row9/widgets/dugme_9_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme91Widget extends StatelessWidget {
+  const Dugme91Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 41
+        },
+        child: Text('41'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row9/widgets/dugme_9_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme92Widget extends StatelessWidget {
+  const Dugme92Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 42
+        },
+        child: Text('42'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row9/widgets/dugme_9_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme93Widget extends StatelessWidget {
+  const Dugme93Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 43
+        },
+        child: Text('43'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row9/widgets/dugme_9_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme94Widget extends StatelessWidget {
+  const Dugme94Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 44
+        },
+        child: Text('44'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row9/widgets/dugme_9_5_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme95Widget extends StatelessWidget {
+  const Dugme95Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 45
+        },
+        child: Text('45'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row9/widgets/dugme_9_6_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme96Widget extends StatelessWidget {
+  const Dugme96Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 46
+        },
+        child: Text('46'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row9/widgets/dugme_9_7_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme97Widget extends StatelessWidget {
+  const Dugme97Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 47
+        },
+        child: Text('47'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row9/widgets/dugme_9_8_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme98Widget extends StatelessWidget {
+  const Dugme98Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 48
+        },
+        child: Text('48'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/row9/widgets/widgetsdart ===
+export 'dugme_9_1_widget.dart';
+export 'dugme_9_2_widget.dart';
+export 'dugme_9_3_widget.dart';
+export 'dugme_9_4_widget.dart';
+export 'dugme_9_5_widget.dart';
+export 'dugme_9_6_widget.dart';
+export 'dugme_9_7_widget.dart';
+export 'dugme_9_8_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/widgets/dugme_1_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme11Widget extends StatelessWidget {
+  const Dugme11Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 1
+        },
+        child: Text('1'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/widgets/dugme_1_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme12Widget extends StatelessWidget {
+  const Dugme12Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 2
+        },
+        child: Text('2'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/widgets/dugme_1_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme13Widget extends StatelessWidget {
+  const Dugme13Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 3
+        },
+        child: Text('3'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/widgets/dugme_1_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme14Widget extends StatelessWidget {
+  const Dugme14Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 4
+        },
+        child: Text('4'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/widgets/dugme_1_5_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme15Widget extends StatelessWidget {
+  const Dugme15Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 5
+        },
+        child: Text('5'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/widgets/dugme_1_6_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme16Widget extends StatelessWidget {
+  const Dugme16Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 6
+        },
+        child: Text('6'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/widgets/dugme_1_7_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme17Widget extends StatelessWidget {
+  const Dugme17Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 7
+        },
+        child: Text('7'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/widgets/dugme_1_8_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme18Widget extends StatelessWidget {
+  const Dugme18Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 8
+        },
+        child: Text('8'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/widgets/page1_grid_layoutdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets.dart';
+
+class Page1GridLayout extends StatelessWidget {
+  const Page1GridLayout({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 16.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme11Widget(),
+            Dugme12Widget(),
+            Dugme13Widget(),
+            Dugme14Widget(),
+            Dugme15Widget(),
+            Dugme16Widget(),
+            Dugme17Widget(),
+            Dugme18Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page2/widgets/widgetsdart ===
+export 'dugme_1_1_widget.dart';
+export 'dugme_1_2_widget.dart';
+export 'dugme_1_3_widget.dart';
+export 'dugme_1_4_widget.dart';
+export 'dugme_1_5_widget.dart';
+export 'dugme_1_6_widget.dart';
+export 'dugme_1_7_widget.dart';
+export 'dugme_1_8_widget.dart';
+export 'page1_grid_layout.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/page1_screendart ===
+import 'package:flutter/material.dart';
+import 'widgets/page1_grid_layout.dart';
+import 'row2/row2_grid.dart';
+import 'row3/row3_grid.dart';
+import 'row4/row4_grid.dart';
+import 'row5/row5_grid.dart';
+import 'row6/row6_grid.dart';
+import 'row7/row7_grid.dart';
+import 'row8/row8_grid.dart';
+import 'row9/row9_grid.dart';
+
+class Page1Screen extends StatelessWidget {
+  const Page1Screen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const Page1GridLayout(), // HEADER - fiksno na vrhu
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: const [
+                  Row2Grid(),
+                  Row3Grid(),
+                  Row4Grid(),
+                  Row5Grid(),
+                  Row6Grid(),
+                  Row7Grid(),
+                  Row8Grid(),
+                ],
+              ),
+            ),
+            const Row9Grid(), // FOOTER - fiksno dolje
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/page3_screendart ===
+import 'package:flutter/material.dart';
+import 'widgets/page1_grid_layout.dart';
+import 'row2/row2_grid.dart';
+import 'row3/row3_grid.dart';
+import 'row4/row4_grid.dart';
+import 'row5/row5_grid.dart';
+import 'row6/row6_grid.dart';
+import 'row7/row7_grid.dart';
+import 'row8/row8_grid.dart';
+import 'row9/row9_grid.dart';
+
+class Page3Screen extends StatelessWidget {
+  const Page3Screen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const Page1GridLayout(),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: const [
+                  Row2Grid(),
+                  Row3Grid(),
+                  Row4Grid(),
+                  Row5Grid(),
+                  Row6Grid(),
+                  Row7Grid(),
+                  Row8Grid(),
+                ],
+              ),
+            ),
+            const Row9Grid(),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row2/row2_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row2Grid extends StatelessWidget {
+  const Row2Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme21Widget(),
+            Dugme22Widget(),
+            Dugme23Widget(),
+            Dugme24Widget(),
+            Dugme25Widget(),
+            Dugme26Widget(),
+            Dugme27Widget(),
+            Dugme28Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row2/widgets/dugme_2_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme21Widget extends StatelessWidget {
+  const Dugme21Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 9
+        },
+        child: Text('9'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row2/widgets/dugme_2_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme22Widget extends StatelessWidget {
+  const Dugme22Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 10
+        },
+        child: Text('10'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row2/widgets/dugme_2_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme23Widget extends StatelessWidget {
+  const Dugme23Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 11
+        },
+        child: Text('11'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row2/widgets/dugme_2_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme24Widget extends StatelessWidget {
+  const Dugme24Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 12
+        },
+        child: Text('12'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row2/widgets/dugme_2_5_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme25Widget extends StatelessWidget {
+  const Dugme25Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 13
+        },
+        child: Text('13'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row2/widgets/dugme_2_6_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme26Widget extends StatelessWidget {
+  const Dugme26Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 14
+        },
+        child: Text('14'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row2/widgets/dugme_2_7_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme27Widget extends StatelessWidget {
+  const Dugme27Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 15
+        },
+        child: Text('15'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row2/widgets/dugme_2_8_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme28Widget extends StatelessWidget {
+  const Dugme28Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 16
+        },
+        child: Text('16'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row2/widgets/widgetsdart ===
+export 'dugme_2_1_widget.dart';
+export 'dugme_2_2_widget.dart';
+export 'dugme_2_3_widget.dart';
+export 'dugme_2_4_widget.dart';
+export 'dugme_2_5_widget.dart';
+export 'dugme_2_6_widget.dart';
+export 'dugme_2_7_widget.dart';
+export 'dugme_2_8_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row3/row3_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row3Grid extends StatelessWidget {
+  const Row3Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme31Widget(),
+            Dugme32Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme33Widget(),
+            Dugme34Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row3/widgets/dugme_3_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme31Widget extends StatelessWidget {
+  const Dugme31Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 17
+        },
+        child: Text('17'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row3/widgets/dugme_3_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme32Widget extends StatelessWidget {
+  const Dugme32Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 18
+        },
+        child: Text('18'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row3/widgets/dugme_3_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme33Widget extends StatelessWidget {
+  const Dugme33Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 19
+        },
+        child: Text('19'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row3/widgets/dugme_3_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme34Widget extends StatelessWidget {
+  const Dugme34Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 20
+        },
+        child: Text('20'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row3/widgets/widgetsdart ===
+export 'dugme_3_1_widget.dart';
+export 'dugme_3_2_widget.dart';
+export 'dugme_3_3_widget.dart';
+export 'dugme_3_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row4/row4_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row4Grid extends StatelessWidget {
+  const Row4Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme41Widget(),
+            Dugme42Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme43Widget(),
+            Dugme44Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row4/widgets/dugme_4_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme41Widget extends StatelessWidget {
+  const Dugme41Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 21
+        },
+        child: Text('21'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row4/widgets/dugme_4_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme42Widget extends StatelessWidget {
+  const Dugme42Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 22
+        },
+        child: Text('22'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row4/widgets/dugme_4_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme43Widget extends StatelessWidget {
+  const Dugme43Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 23
+        },
+        child: Text('23'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row4/widgets/dugme_4_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme44Widget extends StatelessWidget {
+  const Dugme44Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 24
+        },
+        child: Text('24'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row4/widgets/widgetsdart ===
+export 'dugme_4_1_widget.dart';
+export 'dugme_4_2_widget.dart';
+export 'dugme_4_3_widget.dart';
+export 'dugme_4_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row5/row5_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row5Grid extends StatelessWidget {
+  const Row5Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme51Widget(),
+            Dugme52Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme53Widget(),
+            Dugme54Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row5/widgets/dugme_5_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme51Widget extends StatelessWidget {
+  const Dugme51Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 25
+        },
+        child: Text('25'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row5/widgets/dugme_5_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme52Widget extends StatelessWidget {
+  const Dugme52Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 26
+        },
+        child: Text('26'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row5/widgets/dugme_5_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme53Widget extends StatelessWidget {
+  const Dugme53Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 27
+        },
+        child: Text('27'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row5/widgets/dugme_5_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme54Widget extends StatelessWidget {
+  const Dugme54Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 28
+        },
+        child: Text('28'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row5/widgets/widgetsdart ===
+export 'dugme_5_1_widget.dart';
+export 'dugme_5_2_widget.dart';
+export 'dugme_5_3_widget.dart';
+export 'dugme_5_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row6/row6_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row6Grid extends StatelessWidget {
+  const Row6Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme61Widget(),
+            Dugme62Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme63Widget(),
+            Dugme64Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row6/widgets/dugme_6_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme61Widget extends StatelessWidget {
+  const Dugme61Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 29
+        },
+        child: Text('29'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row6/widgets/dugme_6_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme62Widget extends StatelessWidget {
+  const Dugme62Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 30
+        },
+        child: Text('30'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row6/widgets/dugme_6_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme63Widget extends StatelessWidget {
+  const Dugme63Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 31
+        },
+        child: Text('31'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row6/widgets/dugme_6_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme64Widget extends StatelessWidget {
+  const Dugme64Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 32
+        },
+        child: Text('32'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row6/widgets/widgetsdart ===
+export 'dugme_6_1_widget.dart';
+export 'dugme_6_2_widget.dart';
+export 'dugme_6_3_widget.dart';
+export 'dugme_6_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row7/row7_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row7Grid extends StatelessWidget {
+  const Row7Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme71Widget(),
+            Dugme72Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme73Widget(),
+            Dugme74Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row7/widgets/dugme_7_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme71Widget extends StatelessWidget {
+  const Dugme71Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 33
+        },
+        child: Text('33'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row7/widgets/dugme_7_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme72Widget extends StatelessWidget {
+  const Dugme72Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 34
+        },
+        child: Text('34'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row7/widgets/dugme_7_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme73Widget extends StatelessWidget {
+  const Dugme73Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 35
+        },
+        child: Text('35'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row7/widgets/dugme_7_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme74Widget extends StatelessWidget {
+  const Dugme74Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 36
+        },
+        child: Text('36'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row7/widgets/widgetsdart ===
+export 'dugme_7_1_widget.dart';
+export 'dugme_7_2_widget.dart';
+export 'dugme_7_3_widget.dart';
+export 'dugme_7_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row8/row8_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row8Grid extends StatelessWidget {
+  const Row8Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme81Widget(),
+            Dugme82Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme83Widget(),
+            Dugme84Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row8/widgets/dugme_8_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme81Widget extends StatelessWidget {
+  const Dugme81Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 37
+        },
+        child: Text('37'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row8/widgets/dugme_8_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme82Widget extends StatelessWidget {
+  const Dugme82Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 38
+        },
+        child: Text('38'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row8/widgets/dugme_8_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme83Widget extends StatelessWidget {
+  const Dugme83Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 39
+        },
+        child: Text('39'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row8/widgets/dugme_8_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme84Widget extends StatelessWidget {
+  const Dugme84Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 40
+        },
+        child: Text('40'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row8/widgets/widgetsdart ===
+export 'dugme_8_1_widget.dart';
+export 'dugme_8_2_widget.dart';
+export 'dugme_8_3_widget.dart';
+export 'dugme_8_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row9/row9_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../page2/page2_screen.dart';
+import '../../page4/page4_screen.dart';
+import 'widgets/widgets.dart';
+
+class Row9Grid extends StatelessWidget {
+  const Row9Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(left: 8.w, right: 8.w, top: 8.h, bottom: 16.h),
+      child: Column(
+        children: [
+          Table(
+            defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+            children: [
+              TableRow(children: [
+                Dugme91Widget(),
+                Dugme92Widget(),
+                Dugme93Widget(),
+                Dugme94Widget(),
+                Dugme95Widget(),
+                Dugme96Widget(),
+                Dugme97Widget(),
+                Dugme98Widget(),
+              ]),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              IconButton(
+                icon: const Icon(Icons.arrow_back),
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Page2Screen()),
+                  );
+                },
+              ),
+              IconButton(
+                icon: const Icon(Icons.arrow_forward),
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Page4Screen()),
+                  );
+                },
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row9/widgets/dugme_9_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme91Widget extends StatelessWidget {
+  const Dugme91Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 41
+        },
+        child: Text('41'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row9/widgets/dugme_9_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme92Widget extends StatelessWidget {
+  const Dugme92Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 42
+        },
+        child: Text('42'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row9/widgets/dugme_9_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme93Widget extends StatelessWidget {
+  const Dugme93Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 43
+        },
+        child: Text('43'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row9/widgets/dugme_9_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme94Widget extends StatelessWidget {
+  const Dugme94Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 44
+        },
+        child: Text('44'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row9/widgets/dugme_9_5_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme95Widget extends StatelessWidget {
+  const Dugme95Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 45
+        },
+        child: Text('45'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row9/widgets/dugme_9_6_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme96Widget extends StatelessWidget {
+  const Dugme96Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 46
+        },
+        child: Text('46'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row9/widgets/dugme_9_7_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme97Widget extends StatelessWidget {
+  const Dugme97Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 47
+        },
+        child: Text('47'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row9/widgets/dugme_9_8_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme98Widget extends StatelessWidget {
+  const Dugme98Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 48
+        },
+        child: Text('48'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/row9/widgets/widgetsdart ===
+export 'dugme_9_1_widget.dart';
+export 'dugme_9_2_widget.dart';
+export 'dugme_9_3_widget.dart';
+export 'dugme_9_4_widget.dart';
+export 'dugme_9_5_widget.dart';
+export 'dugme_9_6_widget.dart';
+export 'dugme_9_7_widget.dart';
+export 'dugme_9_8_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/widgets/dugme_1_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme11Widget extends StatelessWidget {
+  const Dugme11Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 1
+        },
+        child: Text('1'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/widgets/dugme_1_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme12Widget extends StatelessWidget {
+  const Dugme12Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 2
+        },
+        child: Text('2'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/widgets/dugme_1_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme13Widget extends StatelessWidget {
+  const Dugme13Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 3
+        },
+        child: Text('3'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/widgets/dugme_1_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme14Widget extends StatelessWidget {
+  const Dugme14Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 4
+        },
+        child: Text('4'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/widgets/dugme_1_5_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme15Widget extends StatelessWidget {
+  const Dugme15Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 5
+        },
+        child: Text('5'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/widgets/dugme_1_6_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme16Widget extends StatelessWidget {
+  const Dugme16Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 6
+        },
+        child: Text('6'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/widgets/dugme_1_7_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme17Widget extends StatelessWidget {
+  const Dugme17Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 7
+        },
+        child: Text('7'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/widgets/dugme_1_8_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme18Widget extends StatelessWidget {
+  const Dugme18Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 8
+        },
+        child: Text('8'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/widgets/page1_grid_layoutdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets.dart';
+
+class Page1GridLayout extends StatelessWidget {
+  const Page1GridLayout({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 16.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme11Widget(),
+            Dugme12Widget(),
+            Dugme13Widget(),
+            Dugme14Widget(),
+            Dugme15Widget(),
+            Dugme16Widget(),
+            Dugme17Widget(),
+            Dugme18Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page3/widgets/widgetsdart ===
+export 'dugme_1_1_widget.dart';
+export 'dugme_1_2_widget.dart';
+export 'dugme_1_3_widget.dart';
+export 'dugme_1_4_widget.dart';
+export 'dugme_1_5_widget.dart';
+export 'dugme_1_6_widget.dart';
+export 'dugme_1_7_widget.dart';
+export 'dugme_1_8_widget.dart';
+export 'page1_grid_layout.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/page1_screendart ===
+import 'package:flutter/material.dart';
+import 'widgets/page1_grid_layout.dart';
+import 'row2/row2_grid.dart';
+import 'row3/row3_grid.dart';
+import 'row4/row4_grid.dart';
+import 'row5/row5_grid.dart';
+import 'row6/row6_grid.dart';
+import 'row7/row7_grid.dart';
+import 'row8/row8_grid.dart';
+import 'row9/row9_grid.dart';
+
+class Page1Screen extends StatelessWidget {
+  const Page1Screen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const Page1GridLayout(), // HEADER - fiksno na vrhu
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: const [
+                  Row2Grid(),
+                  Row3Grid(),
+                  Row4Grid(),
+                  Row5Grid(),
+                  Row6Grid(),
+                  Row7Grid(),
+                  Row8Grid(),
+                ],
+              ),
+            ),
+            const Row9Grid(), // FOOTER - fiksno dolje
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/page4_screendart ===
+import 'package:flutter/material.dart';
+import 'widgets/page1_grid_layout.dart';
+import 'row2/row2_grid.dart';
+import 'row3/row3_grid.dart';
+import 'row4/row4_grid.dart';
+import 'row5/row5_grid.dart';
+import 'row6/row6_grid.dart';
+import 'row7/row7_grid.dart';
+import 'row8/row8_grid.dart';
+import 'row9/row9_grid.dart';
+
+class Page4Screen extends StatelessWidget {
+  const Page4Screen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const Page1GridLayout(),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: const [
+                  Row2Grid(),
+                  Row3Grid(),
+                  Row4Grid(),
+                  Row5Grid(),
+                  Row6Grid(),
+                  Row7Grid(),
+                  Row8Grid(),
+                ],
+              ),
+            ),
+            const Row9Grid(),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row2/row2_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row2Grid extends StatelessWidget {
+  const Row2Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme21Widget(),
+            Dugme22Widget(),
+            Dugme23Widget(),
+            Dugme24Widget(),
+            Dugme25Widget(),
+            Dugme26Widget(),
+            Dugme27Widget(),
+            Dugme28Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row2/widgets/dugme_2_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme21Widget extends StatelessWidget {
+  const Dugme21Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 9
+        },
+        child: Text('9'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row2/widgets/dugme_2_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme22Widget extends StatelessWidget {
+  const Dugme22Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 10
+        },
+        child: Text('10'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row2/widgets/dugme_2_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme23Widget extends StatelessWidget {
+  const Dugme23Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 11
+        },
+        child: Text('11'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row2/widgets/dugme_2_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme24Widget extends StatelessWidget {
+  const Dugme24Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 12
+        },
+        child: Text('12'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row2/widgets/dugme_2_5_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme25Widget extends StatelessWidget {
+  const Dugme25Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 13
+        },
+        child: Text('13'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row2/widgets/dugme_2_6_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme26Widget extends StatelessWidget {
+  const Dugme26Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 14
+        },
+        child: Text('14'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row2/widgets/dugme_2_7_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme27Widget extends StatelessWidget {
+  const Dugme27Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 15
+        },
+        child: Text('15'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row2/widgets/dugme_2_8_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme28Widget extends StatelessWidget {
+  const Dugme28Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 16
+        },
+        child: Text('16'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row2/widgets/widgetsdart ===
+export 'dugme_2_1_widget.dart';
+export 'dugme_2_2_widget.dart';
+export 'dugme_2_3_widget.dart';
+export 'dugme_2_4_widget.dart';
+export 'dugme_2_5_widget.dart';
+export 'dugme_2_6_widget.dart';
+export 'dugme_2_7_widget.dart';
+export 'dugme_2_8_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row3/row3_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row3Grid extends StatelessWidget {
+  const Row3Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme31Widget(),
+            Dugme32Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme33Widget(),
+            Dugme34Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row3/widgets/dugme_3_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme31Widget extends StatelessWidget {
+  const Dugme31Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 17
+        },
+        child: Text('17'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row3/widgets/dugme_3_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme32Widget extends StatelessWidget {
+  const Dugme32Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 18
+        },
+        child: Text('18'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row3/widgets/dugme_3_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme33Widget extends StatelessWidget {
+  const Dugme33Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 19
+        },
+        child: Text('19'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row3/widgets/dugme_3_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme34Widget extends StatelessWidget {
+  const Dugme34Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 20
+        },
+        child: Text('20'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row3/widgets/widgetsdart ===
+export 'dugme_3_1_widget.dart';
+export 'dugme_3_2_widget.dart';
+export 'dugme_3_3_widget.dart';
+export 'dugme_3_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row4/row4_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row4Grid extends StatelessWidget {
+  const Row4Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme41Widget(),
+            Dugme42Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme43Widget(),
+            Dugme44Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row4/widgets/dugme_4_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme41Widget extends StatelessWidget {
+  const Dugme41Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 21
+        },
+        child: Text('21'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row4/widgets/dugme_4_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme42Widget extends StatelessWidget {
+  const Dugme42Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 22
+        },
+        child: Text('22'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row4/widgets/dugme_4_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme43Widget extends StatelessWidget {
+  const Dugme43Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 23
+        },
+        child: Text('23'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row4/widgets/dugme_4_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme44Widget extends StatelessWidget {
+  const Dugme44Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 24
+        },
+        child: Text('24'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row4/widgets/widgetsdart ===
+export 'dugme_4_1_widget.dart';
+export 'dugme_4_2_widget.dart';
+export 'dugme_4_3_widget.dart';
+export 'dugme_4_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row5/row5_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row5Grid extends StatelessWidget {
+  const Row5Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme51Widget(),
+            Dugme52Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme53Widget(),
+            Dugme54Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row5/widgets/dugme_5_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme51Widget extends StatelessWidget {
+  const Dugme51Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 25
+        },
+        child: Text('25'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row5/widgets/dugme_5_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme52Widget extends StatelessWidget {
+  const Dugme52Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 26
+        },
+        child: Text('26'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row5/widgets/dugme_5_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme53Widget extends StatelessWidget {
+  const Dugme53Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 27
+        },
+        child: Text('27'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row5/widgets/dugme_5_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme54Widget extends StatelessWidget {
+  const Dugme54Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 28
+        },
+        child: Text('28'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row5/widgets/widgetsdart ===
+export 'dugme_5_1_widget.dart';
+export 'dugme_5_2_widget.dart';
+export 'dugme_5_3_widget.dart';
+export 'dugme_5_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row6/row6_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row6Grid extends StatelessWidget {
+  const Row6Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme61Widget(),
+            Dugme62Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme63Widget(),
+            Dugme64Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row6/widgets/dugme_6_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme61Widget extends StatelessWidget {
+  const Dugme61Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 29
+        },
+        child: Text('29'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row6/widgets/dugme_6_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme62Widget extends StatelessWidget {
+  const Dugme62Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 30
+        },
+        child: Text('30'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row6/widgets/dugme_6_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme63Widget extends StatelessWidget {
+  const Dugme63Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 31
+        },
+        child: Text('31'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row6/widgets/dugme_6_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme64Widget extends StatelessWidget {
+  const Dugme64Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 32
+        },
+        child: Text('32'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row6/widgets/widgetsdart ===
+export 'dugme_6_1_widget.dart';
+export 'dugme_6_2_widget.dart';
+export 'dugme_6_3_widget.dart';
+export 'dugme_6_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row7/row7_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row7Grid extends StatelessWidget {
+  const Row7Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme71Widget(),
+            Dugme72Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme73Widget(),
+            Dugme74Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row7/widgets/dugme_7_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme71Widget extends StatelessWidget {
+  const Dugme71Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 33
+        },
+        child: Text('33'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row7/widgets/dugme_7_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme72Widget extends StatelessWidget {
+  const Dugme72Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 34
+        },
+        child: Text('34'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row7/widgets/dugme_7_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme73Widget extends StatelessWidget {
+  const Dugme73Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 35
+        },
+        child: Text('35'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row7/widgets/dugme_7_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme74Widget extends StatelessWidget {
+  const Dugme74Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 36
+        },
+        child: Text('36'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row7/widgets/widgetsdart ===
+export 'dugme_7_1_widget.dart';
+export 'dugme_7_2_widget.dart';
+export 'dugme_7_3_widget.dart';
+export 'dugme_7_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row8/row8_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/widgets.dart';
+
+class Row8Grid extends StatelessWidget {
+  const Row8Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme81Widget(),
+            Dugme82Widget(),
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+            Dugme83Widget(),
+            Dugme84Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row8/widgets/dugme_8_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme81Widget extends StatelessWidget {
+  const Dugme81Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 37
+        },
+        child: Text('37'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row8/widgets/dugme_8_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme82Widget extends StatelessWidget {
+  const Dugme82Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 38
+        },
+        child: Text('38'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row8/widgets/dugme_8_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme83Widget extends StatelessWidget {
+  const Dugme83Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 39
+        },
+        child: Text('39'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row8/widgets/dugme_8_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme84Widget extends StatelessWidget {
+  const Dugme84Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 40
+        },
+        child: Text('40'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row8/widgets/widgetsdart ===
+export 'dugme_8_1_widget.dart';
+export 'dugme_8_2_widget.dart';
+export 'dugme_8_3_widget.dart';
+export 'dugme_8_4_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row9/row9_griddart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../page3/page3_screen.dart';
+import 'widgets/widgets.dart';
+
+class Row9Grid extends StatelessWidget {
+  const Row9Grid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(left: 8.w, right: 8.w, top: 8.h, bottom: 16.h),
+      child: Column(
+        children: [
+          Table(
+            defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+            children: [
+              TableRow(children: [
+                Dugme91Widget(),
+                Dugme92Widget(),
+                Dugme93Widget(),
+                Dugme94Widget(),
+                Dugme95Widget(),
+                Dugme96Widget(),
+                Dugme97Widget(),
+                Dugme98Widget(),
+              ]),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              IconButton(
+                icon: const Icon(Icons.arrow_back),
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Page3Screen()),
+                  );
+                },
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row9/widgets/dugme_9_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme91Widget extends StatelessWidget {
+  const Dugme91Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 41
+        },
+        child: Text('41'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row9/widgets/dugme_9_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme92Widget extends StatelessWidget {
+  const Dugme92Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 42
+        },
+        child: Text('42'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row9/widgets/dugme_9_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme93Widget extends StatelessWidget {
+  const Dugme93Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 43
+        },
+        child: Text('43'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row9/widgets/dugme_9_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme94Widget extends StatelessWidget {
+  const Dugme94Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 44
+        },
+        child: Text('44'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row9/widgets/dugme_9_5_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme95Widget extends StatelessWidget {
+  const Dugme95Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 45
+        },
+        child: Text('45'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row9/widgets/dugme_9_6_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme96Widget extends StatelessWidget {
+  const Dugme96Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 46
+        },
+        child: Text('46'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row9/widgets/dugme_9_7_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme97Widget extends StatelessWidget {
+  const Dugme97Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 47
+        },
+        child: Text('47'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row9/widgets/dugme_9_8_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme98Widget extends StatelessWidget {
+  const Dugme98Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 48
+        },
+        child: Text('48'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/row9/widgets/widgetsdart ===
+export 'dugme_9_1_widget.dart';
+export 'dugme_9_2_widget.dart';
+export 'dugme_9_3_widget.dart';
+export 'dugme_9_4_widget.dart';
+export 'dugme_9_5_widget.dart';
+export 'dugme_9_6_widget.dart';
+export 'dugme_9_7_widget.dart';
+export 'dugme_9_8_widget.dart';
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/widgets/dugme_1_1_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme11Widget extends StatelessWidget {
+  const Dugme11Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 1
+        },
+        child: Text('1'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/widgets/dugme_1_2_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme12Widget extends StatelessWidget {
+  const Dugme12Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 2
+        },
+        child: Text('2'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/widgets/dugme_1_3_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme13Widget extends StatelessWidget {
+  const Dugme13Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 3
+        },
+        child: Text('3'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/widgets/dugme_1_4_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme14Widget extends StatelessWidget {
+  const Dugme14Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 4
+        },
+        child: Text('4'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/widgets/dugme_1_5_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme15Widget extends StatelessWidget {
+  const Dugme15Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 5
+        },
+        child: Text('5'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/widgets/dugme_1_6_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme16Widget extends StatelessWidget {
+  const Dugme16Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 6
+        },
+        child: Text('6'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/widgets/dugme_1_7_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme17Widget extends StatelessWidget {
+  const Dugme17Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 7
+        },
+        child: Text('7'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/widgets/dugme_1_8_widgetdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dugme18Widget extends StatelessWidget {
+  const Dugme18Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 40.w,
+      height: 40.h,
+      child: ElevatedButton(
+        onPressed: () {
+          // funkcija za dugme 8
+        },
+        child: Text('8'),
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/widgets/page1_grid_layoutdart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets.dart';
+
+class Page1GridLayout extends StatelessWidget {
+  const Page1GridLayout({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 16.h),
+      child: Table(
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children: [
+          TableRow(children: [
+            Dugme11Widget(),
+            Dugme12Widget(),
+            Dugme13Widget(),
+            Dugme14Widget(),
+            Dugme15Widget(),
+            Dugme16Widget(),
+            Dugme17Widget(),
+            Dugme18Widget(),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+=== C:/Users/Korisnik/Documents/projekti/dugmad/lib/features/page4/widgets/widgetsdart ===
+export 'dugme_1_1_widget.dart';
+export 'dugme_1_2_widget.dart';
+export 'dugme_1_3_widget.dart';
+export 'dugme_1_4_widget.dart';
+export 'dugme_1_5_widget.dart';
+export 'dugme_1_6_widget.dart';
+export 'dugme_1_7_widget.dart';
+export 'dugme_1_8_widget.dart';
+export 'page1_grid_layout.dart';
+
+
+
